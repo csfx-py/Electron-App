@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <title>electron</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="container list-container left-container">
+        <ul id="billList"></ul>
+      </div>
+      <div class="container right-container">
+        <div class="right-top-container">
+          <h3>BB biller</h3>
+          <input type="text" name="" id="searchBar">
+        </div>
+        <div class="right-mid-container list-container">
+          <ul id="dishList"></ul>
+        </div>
+        <div class="right-bottom-container">
+          <button onclick="addElement()">Checkout</button>
+          <button onClick="refreshPage()">Reset</button>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <script defer src="render.js"></script>
+  </body>
+</html>
